@@ -2,7 +2,7 @@ import streamlit as st
 import joblib
 import pandas as pd
 
-loan_model = joblib.load('Task4/random_forest_loan_model.pkl')
+loan_model = joblib.load('random_forest_loan_model.pkl')
 
 st.title("Loan Approval System")
 st.write("Enter applicant details for Loan Approval")
