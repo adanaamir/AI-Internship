@@ -1,8 +1,10 @@
 import streamlit as st
 import joblib
 import pandas as pd
+from pathlib import Path
 
-loan_model = joblib.load('random_forest_loan_model.pkl')
+MODEL_PATH = Path(__file__).parent / 'random_forest_loan_model.pkl'
+loan_model = joblib.load(MODEL_PATH)
 
 st.title("Loan Approval System")
 st.write("Enter applicant details for Loan Approval")
